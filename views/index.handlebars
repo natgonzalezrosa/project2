@@ -1,9 +1,63 @@
-<div id="home">
+<div id="home" class="bg">
   <div class="container">
     <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
+      <div class="col-md-12">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Class Date</th>
+              <th scope="col">Start Time</th>
+              <th scope="col">Class Type</th>
+              <th scope="col">Class Level</th>
+              <th scope="col">Instructor</th>
+              <th scope="col">Seats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>8:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Stephanie</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>8:00</td>
+              <td>Power Cycle</td>
+              <td>2</td>
+              <td>Eric</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>9:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Ana</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>9:00</td>
+              <td>Power Cycle</td>
+              <td>2</td>
+              <td>Rachel</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>10:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Eric</td>
+              <td>35</td>
+            </tr>
+          </tbody>
+        </table>
+
+        {{!--
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Example Text</label>
@@ -23,11 +77,19 @@
             <button class="btn btn-danger float-right delete">ｘ</button>
           </li>
           {{/each}}
-        </ul>
+        </ul> --}}
       </div>
     </div>
   </div>
 </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
+{{!--
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/js/mdb.min.js"></script> --}}
