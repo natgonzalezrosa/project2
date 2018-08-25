@@ -1,3 +1,30 @@
-.list-group-item {
+/* .list-group-item {
   line-height: 2.5;
+} */
+
+body, html {
+  height: 100%;
+}
+.bg {
+  /* Free stock image used courtesy of unsplash.com */ 
+  background-image: url("/images/spinbackground.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.table {
+  background: #aab8e8;
+  margin-top: 100px;
+  opacity: 0.80;
+}
+
+.td {
+  font-weight: bold;
+  font-size: 16px;
 }
