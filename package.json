@@ -26,5 +26,17 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natgonzalezrosa/BikePal.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/natgonzalezrosa/BikePal/issues"
+  },
+  "homepage": "https://github.com/natgonzalezrosa/BikePal#readme"
 }
