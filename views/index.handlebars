@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 table-wrapper-scroll-y">
         <table class="table table-hover table-striped z-depth-5 rounded">
           <thead>
             <tr>
@@ -16,6 +16,7 @@
               <th scope="col">Class Level</th>
               <th scope="col">Instructor</th>
               <th scope="col">Seats</th>
+              <th scope="col">Register Now</th>
             </tr>
           </thead>
           <tbody>
@@ -26,6 +27,12 @@
               <td>1</td>
               <td>Stephanie</td>
               <td>30</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <th scope="row">2018-08-01</th>
@@ -34,6 +41,12 @@
               <td>2</td>
               <td>Eric</td>
               <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <th scope="row">2018-08-01</th>
@@ -42,6 +55,12 @@
               <td>1</td>
               <td>Ana</td>
               <td>30</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <th scope="row">2018-08-01</th>
@@ -50,6 +69,12 @@
               <td>2</td>
               <td>Rachel</td>
               <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <th scope="row">2018-08-01</th>
@@ -58,6 +83,54 @@
               <td>1</td>
               <td>Eric</td>
               <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>10:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Eric</td>
+              <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>10:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Eric</td>
+              <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>10:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Eric</td>
+              <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
           </tbody>
         </table>
