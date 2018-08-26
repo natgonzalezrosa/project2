@@ -38,6 +38,7 @@ body, html {
   border-radius: 5px;
   background-color: rgba(0,0,0,.5);
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  box-shadow: 5px 10px;
 }
 
 h1 {
@@ -66,4 +67,10 @@ thead {
 tbody {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
+}
+
+#aboutus {
+  background: #e5e9f9;
+  opacity: 0.84;
+
 }
