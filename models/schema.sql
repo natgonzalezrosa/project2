@@ -24,6 +24,6 @@ CREATE TABLE class_roster
     reminder_optIn boolean DEFAULT true,
     waiver boolean NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (id) REFERENCES schedule(id)
+    FOREIGN KEY (id) REFERENCES schedule(id) ON DELETE CASCADE
 );
 

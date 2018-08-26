@@ -1,11 +1,11 @@
 {
   "development": {
     "username": "root",
-
     "password": "12345678",
-    "database": "exampledb",
+    "database": "BikePal_db",
     "host": "localhost",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "operatorsAliases": "Sequelize.Op"
   },
   "test": {
     "username": "root",
