@@ -2,7 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <table class="table table-hover">
+        <h1><i class="fas fa-bicycle"></i> BikePal</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 table-wrapper-scroll-y">
+        <table class="table table-hover table-striped z-depth-5 rounded">
           <thead>
             <tr>
               <th scope="col">Class Date</th>
@@ -11,6 +16,7 @@
               <th scope="col">Class Level</th>
               <th scope="col">Instructor</th>
               <th scope="col">Seats</th>
+              <th scope="col">Register Now</th>
             </tr>
           </thead>
           <tbody>
@@ -21,6 +27,12 @@
               <td>1</td>
               <td>Stephanie</td>
               <td>30</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <th scope="row">2018-08-01</th>
@@ -29,6 +41,12 @@
               <td>2</td>
               <td>Eric</td>
               <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <th scope="row">2018-08-01</th>
@@ -37,6 +55,12 @@
               <td>1</td>
               <td>Ana</td>
               <td>30</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <th scope="row">2018-08-01</th>
@@ -45,6 +69,12 @@
               <td>2</td>
               <td>Rachel</td>
               <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <th scope="row">2018-08-01</th>
@@ -53,31 +83,57 @@
               <td>1</td>
               <td>Eric</td>
               <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>10:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Eric</td>
+              <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>10:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Eric</td>
+              <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2018-08-01</th>
+              <td>10:00</td>
+              <td>Power Cycle</td>
+              <td>1</td>
+              <td>Eric</td>
+              <td>35</td>
+              <td>
+                <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <input type="hidden" name="seats" value="false">
+                  <button type="submit" class="btn unique-color-dark btn-sm">4 Seats Left</button>
+                </form>
+              </td>
             </tr>
           </tbody>
         </table>
-
-        {{!--
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul> --}}
       </div>
     </div>
   </div>
