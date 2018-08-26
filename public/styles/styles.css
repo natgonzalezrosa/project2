@@ -18,6 +18,7 @@ body, html {
 .table {
   background: #e5e9f9;
   margin-top: 40px;
+  margin-bottom: 80px;
   opacity: 0.84;
 }
 
@@ -42,4 +43,9 @@ thead {
   font-size: 16px;
   background-color: #22242f;
   color: #ffffff;
+}
+
+tbody {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
 }
