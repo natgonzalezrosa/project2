@@ -7,7 +7,7 @@ CREATE TABLE schedule
 (
     id int NOT NULL AUTO_INCREMENT,
     class_date date NOT NULL,
-    start_time varchar(255) NOT NULL, 
+    start_time time NOT NULL, 
     class_type varchar(255) NOT NULL, 
     class_level int NOT NULL,
     instructor varchar (255) NOT NULL, 
@@ -24,6 +24,6 @@ CREATE TABLE class_roster
     reminder_optIn boolean DEFAULT true,
     waiver boolean NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (id) REFERENCES schedule(id)
+    FOREIGN KEY (id) REFERENCES schedule(id) ON DELETE CASCADE
 );
 
