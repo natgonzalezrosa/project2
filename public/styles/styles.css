@@ -1,3 +1,119 @@
-.list-group-item {
-  line-height: 2.5;
+
+body, html {
+  height: 100%;
+}
+.bg {
+  /* Free stock image used courtesy of unsplash.com */ 
+  background-image: url("/images/spinbackground.jpg");
+  background-repeat: repeat-x;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.table {
+  background: #e5e9f9;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  opacity: 0.84;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  box-shadow: 5px 10px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 8px #000000;
+  letter-spacing: 3px;
+}
+
+.navfont {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+}
+
+thead {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  background-color: #22242f;
+  color: #ffffff;
+}
+
+tbody {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+}
+
+.aboutustitle {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+#aboutus {
+  background: #e5e9f9;
+  opacity: 0.84;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  text-align:justify;
+  line-height: 2;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 24px;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+#plans_title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  font-style: italic;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px #000000;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.plan-header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.plan-text {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  overflow-y: scroll;
+  line-height: 2;
+}
+
+#price_panel {
+  opacity: 0.84;
 }
