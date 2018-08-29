@@ -16,6 +16,16 @@ module.exports = function(app) {
     res.render("pricing");
   });
 
+  // Load Sign Up page
+  app.get("/signup", function(req, res) {
+    res.render("signup");
+  });
+
+  // Load Login page
+  app.get("/login", function(req, res) {
+    res.render("login");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
