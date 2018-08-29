@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "NEWPASSWORD",
     "database": "BikePal_db",
     "host": "localhost",
     "dialect": "mysql",
@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "root",
-    "password": "12345678",
+    "password": "NEWPASSWORD",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",

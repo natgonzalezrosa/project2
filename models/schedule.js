@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-  var BikePal = sequelize.define("BikePal", {
-    text: DataTypes.STRING,
+  var Schedule = sequelize.define("Schedule", {
+    id: DataTypes.INT,
     description: DataTypes.TEXT
   });
   return BikePal;

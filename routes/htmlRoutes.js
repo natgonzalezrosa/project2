@@ -23,6 +23,7 @@ module.exports = function(app) {
     res.render("login");
   });
 
+  // Load Sign Up page
   app.get("/signup", function(req, res) {
     res.render("signup");
   });
