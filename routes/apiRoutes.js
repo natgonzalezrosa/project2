@@ -1,24 +1,36 @@
 var db = require("../models");
+var path = require("path");
+
+var isAuthenticated = require('../helpers/isAuthenticated');
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
-    });
+  // Load index page
+  app.get("/", function(req, res) {
+    res.render("index");
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
-    });
+  // Load About Us page
+  app.get("/about",isAuthenticated, function(req, res) {
+    res.render("about");
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
-    });
+  // Load Pricing page
+  app.get("/pricing", function(req, res) {
+    res.render("pricing");
+  });
+
+  // Load Sign Up page
+  app.get("/signup", function(req, res) {
+    res.render("signup");
+  });
+
+  // Load Login page
+  app.get("/login", function(req, res) {
+    res.render("login");
+  });
+
+  // Render 404 page for any unmatched routes
+  app.get("*", function(req, res) {
+    res.render("404");
   });
 };

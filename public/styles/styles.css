@@ -88,6 +88,12 @@ tbody {
   overflow-y: scroll;
 }
 
+}
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
 #plans_title {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
