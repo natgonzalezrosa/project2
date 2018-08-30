@@ -19,13 +19,18 @@ module.exports = function(app) {
     res.render("pricing");
   });
 
+  // Load Sign Up page
+  app.get("/signup", function(req, res) {
+    res.render("signup");
+  });
+
   app.get("/login", function(req, res) {
     res.render("login");
   });
 
-  // Load Sign Up page
-  app.get("/signup", function(req, res) {
-    res.render("signup");
+  // When logout, reroute to index page
+  app.get("/logout", function(req, res) {
+    res.render("index");
   });
 
   // Render 404 page for any unmatched routes

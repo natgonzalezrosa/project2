@@ -1,7 +1,7 @@
 DROP DATABASE IF EXISTS BikePal_db;
 CREATE DATABASE BikePal_db;
 
-USE BikePal_db;
+/* USE BikePal_db;
 
 CREATE TABLE schedule 
 (
@@ -35,5 +35,5 @@ CREATE TABLE clients
     PRIMARY KEY (id),
     FOREIGN KEY (client_id) REFERENCES schedule(id) ON DELETE CASCADE
 );
-
+ */
 
