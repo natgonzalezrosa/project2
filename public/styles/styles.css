@@ -2,6 +2,7 @@
 body, html {
   height: 100%;
 }
+
 .bg {
   /* Free stock image used courtesy of unsplash.com */ 
   background-image: url("/images/spinbackground.jpg");
@@ -52,6 +53,25 @@ h1 {
   letter-spacing: 3px;
 }
 
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 6px #000000;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  letter-spacing: 2px;
+}
+
 .navfont {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
@@ -88,7 +108,6 @@ tbody {
   overflow-y: scroll;
 }
 
-}
 form.signup,
 form.login {
   margin-top: 50px;
@@ -122,4 +141,10 @@ form.login {
 
 #price_panel {
   opacity: 0.84;
+}
+
+#loginbutton {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
 }

@@ -29,6 +29,11 @@ module.exports = function(app) {
     res.render("login");
   });
 
+  // When logout, reroute to index page
+  app.get("/logout", function(req, res) {
+    res.render("index");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
