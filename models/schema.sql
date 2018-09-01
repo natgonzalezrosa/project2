@@ -1,9 +1,9 @@
 DROP DATABASE IF EXISTS BikePal_db;
 CREATE DATABASE BikePal_db;
 
-/* USE BikePal_db;
+USE BikePal_db;
 
-CREATE TABLE schedule 
+/* CREATE TABLE schedules 
 (
     id int AUTO_INCREMENT NOT NULL ,
     class_date date NOT NULL,
@@ -19,7 +19,6 @@ CREATE TABLE class_roster
 (
     id int NOT NULL AUTO_INCREMENT,
     client_name varchar(255) NOT NULL,
-    -- bike_number int NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (id) REFERENCES schedule(id) ON DELETE CASCADE
 );
@@ -34,7 +33,6 @@ CREATE TABLE clients
     waiver boolean NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (client_id) REFERENCES schedule(id) ON DELETE CASCADE
-);
- */
+); */
 
 

@@ -1,13 +1,27 @@
+// Dependencies
 var db = require("../models");
 var path = require("path");
 
 var isAuthenticated = require('../helpers/isAuthenticated');
 
 module.exports = function(app) {
-  // Load index page
+
+  // GET route for root page
   app.get("/", function(req, res) {
-    res.render("index");
+
+    db.Schedules.findAll({}).then(function(results) {
+      
+      res.render("index", {
+        schedules: results
+      });
+
+    });
+    
   });
+
+  /* app.get("/", function(req, res) {
+    res.render("index");
+  }); */
 
   // Load About Us page
   app.get("/about", function(req, res) {
@@ -38,16 +52,6 @@ module.exports = function(app) {
   app.get("/members", function(req, res) {
     res.render("members");
   });
-
-  // Load Classes page
-  app.get("/classes", function(req, res) {
-    db.Schedule.findAll({}).then(function(schedules){
-      console.log(schedules)
-    })
-    res.render("index");
-  });
-
-
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {

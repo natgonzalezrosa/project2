@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var Schedule = sequelize.define("Schedule", {
+  var Schedules = sequelize.define("Schedules", {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -38,7 +38,9 @@ module.exports = function(sequelize, DataTypes) {
     }
   },{
     timestamps: false
+  }, {
+    freezeTableName: true,
   });
 
-  return Schedule;
+  return Schedules;
 };
