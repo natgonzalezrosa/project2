@@ -5,7 +5,7 @@ CREATE DATABASE BikePal_db;
 
 CREATE TABLE schedule 
 (
-    id int NOT NULL AUTO_INCREMENT,
+    id int AUTO_INCREMENT NOT NULL ,
     class_date date NOT NULL,
     start_time time NOT NULL, 
     class_type varchar(255) NOT NULL, 

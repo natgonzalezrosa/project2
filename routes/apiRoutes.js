@@ -10,7 +10,7 @@ module.exports = function(app) {
   });
 
   // Load About Us page
-  app.get("/about",isAuthenticated, function(req, res) {
+  app.get("/about", function(req, res) {
     res.render("about");
   });
 
@@ -34,8 +34,24 @@ module.exports = function(app) {
     res.render("index");
   });
 
+  // Load Members page
+  app.get("/members", function(req, res) {
+    res.render("members");
+  });
+
+  // Load Classes page
+  app.get("/classes", function(req, res) {
+    db.Schedule.findAll({}).then(function(schedules){
+      console.log(schedules)
+    })
+    res.render("index");
+  });
+
+
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
   });
+
 };

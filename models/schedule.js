@@ -36,6 +36,8 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       len:[1,2]
     }
+  },{
+    timestamps: false
   });
 
   return Schedule;
