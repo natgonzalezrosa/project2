@@ -11,7 +11,7 @@ passport.use( new LocalStrategy(
     function (email, password, done ){
         db.User.findOne({
             where: {
-                email:email
+                email: email
             }
         }).then((dbUser)=>{
             //if there is no user with the given email 
