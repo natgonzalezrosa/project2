@@ -1,4 +1,4 @@
-// Get references to page elements
+/* // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
@@ -57,9 +57,9 @@ var refreshExamples = function() {
     $exampleList.empty();
     $exampleList.append($examples);
   });
-};
+}; */
 
-// handleFormSubmit is called whenever we submit a new example
+/* // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
 var handleFormSubmit = function(event) {
   event.preventDefault();
@@ -80,7 +80,7 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
-};
+}; */
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list
