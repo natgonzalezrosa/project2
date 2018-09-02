@@ -17,15 +17,21 @@ module.exports = function(app) {
     });
   });
 
-  // // PUT route to update seat count
-  // app.put("/api/schedules/:id", function(req, res) {
-  //   db.Schedules.update(req.body, {
-  //     where: {
-  //       seats: req.body.seats
-  //     }
-  //   }).then(function(dbSeats) {
-  //     res.json(dbSeats);
-  //   })
+  // app.put("/:id", (req, res) => {
+
+  //   var id = req.params.id;
+  //   console.log("id", id);
+
+  //   db.Schedules.update(req.body, 
+      
+  //     {
+  //       where: {
+  //         seats: req.params.seats
+  //       }
+  //   }).then(function(results) {
+  //       res.redirect(results);
+  //   });
+
   // });
   
 };

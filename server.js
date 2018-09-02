@@ -3,6 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
 var session = require('express-session');
+var methodOverride = require('method-override');
 const db = require("./models");
 
 
@@ -15,6 +16,7 @@ var PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(methodOverride("_method"));
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
