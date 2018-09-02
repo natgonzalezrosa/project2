@@ -15,7 +15,7 @@ module.exports = function(app) {
     res.render("pricing");
   });
 
-  app.get("/login", isAuthenticated, function(req, res) {
+  app.get("/login", function(req, res) {
     res.render("login");
   });
 
@@ -30,7 +30,7 @@ module.exports = function(app) {
   });
 
   // Load Members page
-  app.get("/members", function(req, res) {
+  app.get("/members", isAuthenticated, function(req, res) {
     res.render("members");
   });
 
