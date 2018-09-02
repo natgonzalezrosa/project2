@@ -6,14 +6,14 @@ body, html {
 .bg {
   /* Free stock image used courtesy of unsplash.com */ 
   background-image: url("/images/spinbackground.jpg");
-  background-repeat: repeat-x;
 
   /* Full height */
-  height: 100%;
+  min-height: 100%;
 
   /* Center and scale the image nicely */
-  background-position: fixed;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
 }
 
@@ -89,7 +89,7 @@ tbody {
   font-size: 16px;
 }
 
-.aboutustitle, .memberstitle {
+.aboutustitle, .memberstitle, .reservetitle {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -110,7 +110,7 @@ tbody {
   overflow-y: scroll;
 }
 
-#membersupdates {
+#membersupdates, #reserveclass {
   background: #e5e9f9;
   opacity: 0.84;
   margin-top: 30px;

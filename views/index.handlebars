@@ -75,7 +75,7 @@
                 <td>{{this.instructor}}</td>
                 <td>{{this.seats}}</td>
                 <td>
-                  <form action="/{{this.id}}?_method=PUT" method="POST">
+                  <form action="/login" method="GET">
                     <input type="hidden" name="seats" value="false">
                     <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
                   </form>
