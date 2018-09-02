@@ -4,18 +4,6 @@ var path = require("path");
 var isAuthenticated = require('../helpers/isAuthenticated');
 
 module.exports = function(app) {
-  // Load index page
-  app.get("/", function(req, res) {
-
-    db.Schedules.findAll({}).then(function(results) {
-      
-      res.render("index", {
-        schedules: results
-      });
-
-    });
-
-  });
 
   // Load About Us page
   app.get("/about", function(req, res) {

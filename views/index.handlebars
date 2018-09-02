@@ -75,117 +75,16 @@
                 <td>{{this.instructor}}</td>
                 <td>{{this.seats}}</td>
                 <td>
-                  <form action="/{{this.seats}}?_method=PUT" method="POST">
+                  <form action="/{{this.id}}?_method=PUT" method="POST">
                     <input type="hidden" name="seats" value="false">
                     <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
                   </form>
                 </td>
               </tr>
             {{/each}}
-            {{!--
-            <tr> --}} {{!--
-              <th scope="row">2018-08-01</th>
-              <td>8:00</td>
-              <td>Power Cycle</td>
-              <td>2</td>
-              <td>Eric</td>
-              <td>35</td>
-              <td>
-                <form action="/{{this.seats}}?_method=PUT" method="POST">
-                  <input type="hidden" name="seats" value="false">
-                  <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2018-08-01</th>
-              <td>9:00</td>
-              <td>Power Cycle</td>
-              <td>1</td>
-              <td>Ana</td>
-              <td>30</td>
-              <td>
-                <form action="/{{this.seats}}?_method=PUT" method="POST">
-                  <input type="hidden" name="seats" value="false">
-                  <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2018-08-01</th>
-              <td>9:00</td>
-              <td>Power Cycle</td>
-              <td>2</td>
-              <td>Rachel</td>
-              <td>35</td>
-              <td>
-                <form action="/{{this.seats}}?_method=PUT" method="POST">
-                  <input type="hidden" name="seats" value="false">
-                  <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2018-08-01</th>
-              <td>10:00</td>
-              <td>Power Cycle</td>
-              <td>1</td>
-              <td>Eric</td>
-              <td>35</td>
-              <td>
-                <form action="/{{this.seats}}?_method=PUT" method="POST">
-                  <input type="hidden" name="seats" value="false">
-                  <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2018-08-01</th>
-              <td>10:00</td>
-              <td>Power Cycle</td>
-              <td>1</td>
-              <td>Eric</td>
-              <td>35</td>
-              <td>
-                <form action="/{{this.seats}}?_method=PUT" method="POST">
-                  <input type="hidden" name="seats" value="false">
-                  <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2018-08-01</th>
-              <td>10:00</td>
-              <td>Power Cycle</td>
-              <td>1</td>
-              <td>Eric</td>
-              <td>35</td>
-              <td>
-                <form action="/{{this.seats}}?_method=PUT" method="POST">
-                  <input type="hidden" name="seats" value="false">
-                  <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2018-08-01</th>
-              <td>10:00</td>
-              <td>Power Cycle</td>
-              <td>1</td>
-              <td>Eric</td>
-              <td>35</td>
-              <td>
-                <form action="/{{this.seats}}?_method=PUT" method="POST">
-                  <input type="hidden" name="seats" value="false">
-                  <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
-                </form>
-              </td>
-            </tr> --}}
           </tbody>
         </table>
       </div>
     </div>
   </div>
 </div>
-{{!--
-<script src="/js/index.js"></script> --}}

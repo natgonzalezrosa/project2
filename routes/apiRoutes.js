@@ -6,7 +6,7 @@ var isAuthenticated = require('../helpers/isAuthenticated');
 
 module.exports = function(app) {
 
-  // GET route for root page
+  // GET route to load data from Schedules model to index page
   app.get("/", function(req, res) {
 
     db.Schedules.findAll({}).then(function(results) {
@@ -14,48 +14,24 @@ module.exports = function(app) {
       res.render("index", {
         schedules: results
       });
-
     });
-    
   });
 
-  /* app.get("/", function(req, res) {
-    res.render("index");
-  }); */
+  // app.put("/:id", (req, res) => {
 
-  // Load About Us page
-  app.get("/about", function(req, res) {
-    res.render("about");
-  });
+  //   var id = req.params.id;
+  //   console.log("id", id);
 
-  // Load Pricing page
-  app.get("/pricing", function(req, res) {
-    res.render("pricing");
-  });
+  //   db.Schedules.update(req.body, 
+      
+  //     {
+  //       where: {
+  //         seats: req.params.seats
+  //       }
+  //   }).then(function(results) {
+  //       res.redirect(results);
+  //   });
 
-  // Load Sign Up page
-  app.get("/signup", function(req, res) {
-    res.render("signup");
-  });
-
-  // Load Login page
-  app.get("/login", function(req, res) {
-    res.render("login");
-  });
-
-  // When logout, reroute to index page
-  app.get("/logout", function(req, res) {
-    res.render("index");
-  });
-
-  // Load Members page
-  app.get("/members", function(req, res) {
-    res.render("members");
-  });
-
-  // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
-    res.render("404");
-  });
-
+  // });
+  
 };
