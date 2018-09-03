@@ -50,31 +50,26 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h2>Sign Up Form</h2>
-        <form class="signup">
-          <div class="form-group">
-            <label for="exampleInputName1"><h3>First Name</h3></label>
-            <input type="text" class="form-control" id="name-input" placeholder="First Name">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1"><h3>Email address</h3></label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1"><h3>Password</h3></label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
-          </div>
-          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-            {{!-- <i class="fa fa-exclamation-circle" aria-hidden="true"></i> --}}
-            <span class="sr-only">Error:</span>
-            <span class="msg"></span>
-          </div>
-          <button type="submit" class="btn btn-mdb-color">Sign Up</button>
-        </form>
+        <h2>Contact Us</h2>
+        <div class="form-group">
+            <label for="subject"><h3>Subject:</h3></label>
+            <input type="userInfo" class="form-control" id="subject" aria-describedby="userHelp" placeholder="Subject">
+        </div>
+        <div class="form-group">
+            <label for="contact"><h3>Email:</h3></label>
+            <input type="userInfo" class="form-control" id="contact" aria-describedby="userHelp" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+            <label for="message"><h3>Message</h3></label>
+            <textarea class="form-control" id="message" rows="4"></textarea>
+            <div id="contactMsg"></div>
+            <hr>
+            <button id="contactBtn" type="button" class="btn btn-dark">Contact Us</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/signup.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>

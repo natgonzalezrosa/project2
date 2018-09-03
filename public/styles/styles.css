@@ -163,3 +163,12 @@ form.login {
   font-size: 16px;
   color: #ffffff;
 }
+
+#contactMsg {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  letter-spacing: 2px;
+}
