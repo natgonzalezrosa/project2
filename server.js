@@ -3,13 +3,13 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
 var session = require('express-session');
+
 var methodOverride = require('method-override');
 const db = require("./models");
 
-
+// Config
 var passport = require('./helpers/passport');
 var secret = require('./config/key');
-
 
 var app = express();
 var PORT = process.env.PORT || 3000;
@@ -38,6 +38,7 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 require("./routes/passportRoutes")(app);
 require("./routes/htmlRoutes")(app);
+require("./routes/mailRoutes")(app);
 
 var syncOptions = { force: false };
 

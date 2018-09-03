@@ -21,7 +21,7 @@ module.exports = function(app) {
 
   // When logout, reroute to index page
   app.get("/logout", function(req, res) {
-    res.render("index");
+    res.redirect("/");
   });
 
   // Load Sign Up page
@@ -32,6 +32,11 @@ module.exports = function(app) {
   // Load Members page
   app.get("/members", isAuthenticated, function(req, res) {
     res.render("members");
+  });
+
+  // Load Contact Us page
+  app.get("/contact", function(req, res) {
+    res.render("contact");
   });
 
   // Render 404 page for any unmatched routes
