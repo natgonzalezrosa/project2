@@ -25,6 +25,9 @@
       <li class="nav-item">
         <a class="nav-link" href="/pricing">Pricing</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact Us</a>
+      </li>
     </ul>
 
     <!-- Right Side -->
@@ -50,6 +53,10 @@
         <h2>Sign Up Form</h2>
         <form class="signup">
           <div class="form-group">
+            <label for="exampleInputName1"><h3>First Name</h3></label>
+            <input type="text" class="form-control" id="name-input" placeholder="First Name">
+          </div>
+          <div class="form-group">
             <label for="exampleInputEmail1"><h3>Email address</h3></label>
             <input type="email" class="form-control" id="email-input" placeholder="Email">
           </div>
@@ -58,7 +65,7 @@
             <input type="password" class="form-control" id="password-input" placeholder="Password">
           </div>
           <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            {{!-- <i class="fa fa-exclamation-circle" aria-hidden="true"></i> --}}
             <span class="sr-only">Error:</span>
             <span class="msg"></span>
           </div>

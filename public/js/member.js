@@ -1,36 +1,10 @@
 $(document).ready(function() {
-    // This file just does a GET request to figure out which user is logged in
-    // and updates the HTML on the page
-    $.get("/api/userData").then(function(data) {
-      console.log(data);
-      $(".member-name").text(data.email+"| UserID: "+data.id);
-      contactBtn.on("click", function(event){
-        event.preventDefault();
-        var newMessage = {
-          subject: subject.val().trim(),
-          message: message.val().trim(),
-          contact: contact.val().trim()
-        }
-        if(!newMessage.subject || !newMessage.message){
-          $("#contactMsg").text("Please check the fields and try again.");
-          return;
-        }
-        sendContact(newMessage.subject, newMessage.message, newMessage.contact);
-        subject.val("");
-        message.val("");
-        contact.val("");
-        $("#contactMsg").text("Thank you, one of our customer representatives will be in touch with you shortly.");
-      });
-      function sendContact (subject, message, contact) {
-        $.post("/api/contact",{
-          subject: subject,
-          message: message,
-          contact: contact
-        }).then(function(data){
-          window.location.replace(data);
-        }).catch(function(err){
-          console.log(err);
-        });
-      };
-    });
-    });
+  // This file just does a GET request to figure out which user is logged in
+  // and updates the HTML on the page
+  $.get("/api/userData").then(function(data) {
+    console.log(data);
+    $(".member-email").text(data.email);
+    $(".member-name").text(data.firstName);
+
+  });
+});

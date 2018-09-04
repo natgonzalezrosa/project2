@@ -3,11 +3,12 @@ var passport = require("../helpers/passport.js");
 
 module.exports = function (app) {
     app.post("/api/login", passport.authenticate("local"), (req, res) => {
-        res.json("/");
+        res.json("/members");
     })
 
     app.post("/api/signup", (req, res) => {
         db.User.create({
+            firstName: req.body.firstName,
             email: req.body.email,
             password: req.body.password
         }).then(() => {
@@ -20,10 +21,11 @@ module.exports = function (app) {
 
     app.get("/api/userData", (req, res) => {
         if (!req.user) {
-            res.json({ "message": "unauth acess" });
+            res.json({ "message": "unauth access" });
         }
         else {
             res.json({
+                firstName: req.user.firstName,
                 email: req.user.email,
                 id: req.user.id
             });

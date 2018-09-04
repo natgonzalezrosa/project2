@@ -25,6 +25,9 @@
       <li class="nav-item">
         <a class="nav-link" href="/pricing">Pricing</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact Us</a>
+      </li>
     </ul>
 
     <!-- Right Side -->
@@ -42,7 +45,6 @@
     </ul>
   </div>
 </nav>
- 
 
 <div id="home" class="bg">
   <div class="container">
@@ -53,7 +55,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 table-wrapper-scroll-y">
+      <div class="col-md-12 table-wrapper-scroll-y table-responsive">
         <table class="table table-hover table-striped z-depth-5 rounded">
           <thead>
             <tr>
@@ -76,7 +78,7 @@
                 <td>{{this.instructor}}</td>
                 <td>{{this.seats}}</td>
                 <td>
-                  <form action="/{{this.id}}?_method=PUT" method="POST">
+                  <form action="/login" method="GET">
                     <input type="hidden" name="seats" value="false">
                     <button type="submit" class="btn unique-color-dark btn-sm">Reserve</button>
                   </form>
