@@ -38,6 +38,7 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 require("./routes/passportRoutes")(app);
 require("./routes/htmlRoutes")(app);
+require("./routes/mailRoutes")(app);
 
 var syncOptions = { force: false };
 
