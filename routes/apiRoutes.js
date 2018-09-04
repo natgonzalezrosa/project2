@@ -4,34 +4,29 @@ var path = require("path");
 
 var isAuthenticated = require('../helpers/isAuthenticated');
 
-module.exports = function(app) {
+module.exports = function (app) {
 
   // GET route to load data from Schedules model to index page
-  app.get("/", function(req, res) {
+  app.get("/", function (req, res) {
 
-    db.Schedules.findAll({}).then(function(results) {
-      
+    db.Schedules.findAll({}).then(function (results) {
+
       res.render("index", {
         schedules: results
       });
     });
   });
 
-  // app.put("/:id", (req, res) => {
+  app.post("/api/reserveClass", (req, res) => {
+    db.ClassRoster.create({
+      client_name: req.body.client_name,
+      client_id: req.body.client_id
+    }).then(() => {
+      alert("Test");
+    }).catch(function (err) {
+      console.log(err);
+      res.json(err);
+    });
+  });
 
-  //   var id = req.params.id;
-  //   console.log("id", id);
-
-  //   db.Schedules.update(req.body, 
-      
-  //     {
-  //       where: {
-  //         seats: req.params.seats
-  //       }
-  //   }).then(function(results) {
-  //       res.redirect(results);
-  //   });
-
-  // });
-  
 };
