@@ -15,7 +15,7 @@ CREATE TABLE schedules
     PRIMARY KEY (id)
 );
 
-CREATE TABLE class_roster 
+CREATE TABLE classRosters
 (
     client_name varchar(255) NOT NULL,
     class_id int NOT NULL,
@@ -32,5 +32,5 @@ CREATE TABLE clients
     reminder_optIn boolean DEFAULT true,
     waiver boolean NOT NULL,
     PRIMARY KEY (client_id),
-    FOREIGN KEY (client_name) REFERENCES class_roster(client_name)
+    FOREIGN KEY (client_name) REFERENCES classRosters(client_name)
 );

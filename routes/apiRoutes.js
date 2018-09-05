@@ -17,16 +17,14 @@ module.exports = function (app) {
     });
   });
 
-  app.post("/api/reserveClass", (req, res) => {
-    db.ClassRoster.create({
+  // POST route to create a new reservation
+  app.post("/api/reservation", function(req, res) {
+
+    db.classRoster.create({
       client_name: req.body.client_name,
-      client_id: req.body.client_id
-    }).then(() => {
-      alert("Test");
-    }).catch(function (err) {
-      console.log(err);
-      res.json(err);
+      class_id: req.body.class_id
+    }).then(function (dbReservation) {
+      res.json(dbReservation);
     });
   });
-
 };
