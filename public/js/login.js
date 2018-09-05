@@ -35,7 +35,7 @@ $(document).ready(function() {
         window.location.replace(data);
         // If there's an error, log the error
       }).catch(function(err) {
-        alert("Wrong Username or Password");
+        $("#centralModalSuccess").modal('toggle');
         console.log(err);
       });
     }

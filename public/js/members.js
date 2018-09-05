@@ -51,6 +51,7 @@ var handleFormSubmit = function(event) {
   }
 
   API.saveReservation(reservation).then(function() {
+    $("#centralModalSuccess").modal('toggle');
     refreshReservation();
   });
 
