@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var ClassRoster = sequelize.define("ClassRoster", {
+    var classRoster = sequelize.define("classRoster", {
         client_name: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -15,5 +15,5 @@ module.exports = function(sequelize, DataTypes) {
         timestamps: false
       });
     
-      return ClassRoster;
+      return classRoster;
     };

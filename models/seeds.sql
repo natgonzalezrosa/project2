@@ -4,10 +4,10 @@ INSERT INTO schedules (class_date, start_time, class_type, class_level, instruct
 INSERT INTO schedules (class_date, start_time, class_type, class_level, instructor, seats) VALUES ('2018-08-01', '9:00', 'Power Cycle', 2, 'Rachel', 35);
 INSERT INTO schedules (class_date, start_time, class_type, class_level, instructor, seats) VALUES ('2018-08-01', '10:00', 'Power Cycle', 1, 'Eric', 35);
 
-INSERT INTO class_roster (client_name, class_id) VALUES ('Alex Schaeffer', '2');
-INSERT INTO class_roster (client_name, class_id) VALUES ('Mike Bale', '2');
-INSERT INTO class_roster (client_name, class_id) VALUES ('Jessica Trostan', '4');
-INSERT INTO class_roster (client_name, class_id) VALUES ('Tracey Green', '5');
+INSERT INTO classRosters (client_name, class_id) VALUES ('Alex Schaeffer', '2');
+INSERT INTO classRosters (client_name, class_id) VALUES ('Mike Bale', '2');
+INSERT INTO classRosters (client_name, class_id) VALUES ('Jessica Trostan', '4');
+INSERT INTO classRosters (client_name, class_id) VALUES ('Tracey Green', '5');
 
 
 INSERT INTO clients (client_name, email, phone_number, reminder_optIn, waiver) VALUES ('Alex Schaeffer', 'aschaeff@gmail.com', '(335)-642-3204', true, true);
