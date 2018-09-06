@@ -20,7 +20,6 @@ CREATE TABLE classRosters
     client_name varchar(255) NOT NULL,
     class_id int NOT NULL,
     PRIMARY KEY (client_name),
-    FOREIGN KEY (class_id) REFERENCES schedules(id)
 );
 
 CREATE TABLE clients
